@@ -1,5 +1,8 @@
 <form action="/sms" method="post">
-  <input type="text" name="destination">
+  <label for="destination">To:</label>
+  <input type="text" pattern="^\d{3}-\d{3|-\d{4}$" name="destination"> <br>
+  <label for="text">Message:</label>
   <input type="text" name="message">
+  <br>
   <input type="submit" name="send">
 </form>
