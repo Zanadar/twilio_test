@@ -3,6 +3,7 @@ GEM
   specs:
     builder (3.2.2)
     coderay (1.1.0)
+    dotenv (2.0.1)
     haml (4.0.6)
       tilt
     jwt (1.4.1)
@@ -33,6 +34,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  dotenv
   haml
   pry
   sass (>= 3.3.0)

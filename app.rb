@@ -30,14 +30,13 @@ post '/sms' do
   account_sid = 'AC89f1950f579fb841a657fed01990da20' 
   auth_token = ENV['TWILIO_AUTH_TOKEN'] 
 
-  binding.pry
   @client = Twilio::REST::Client.new account_sid, auth_token 
-  
   @client.account.messages.create({
     from: '+17077352034',    
     to: params[:destination],
     body: params[:message]
   })
 
+  haml :sms
   
 end
