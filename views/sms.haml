@@ -1,0 +1,10 @@
+.container
+  .form
+    %form{action: "/sms", method: "post"}
+      %label{for: "destination"} To:
+      %input{type: "text", name: "destination"}
+      %br
+      %label{for: "message"}Message:
+      %textarea{name: "message"}
+      %br
+      %input{type:"submit", value: "send"}
